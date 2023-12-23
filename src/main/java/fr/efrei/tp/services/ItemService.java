@@ -1,5 +1,6 @@
 package fr.efrei.tp;
 
+import fr.efrei.tp.domain.entity.Item;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
