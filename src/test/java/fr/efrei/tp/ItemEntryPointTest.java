@@ -1,15 +1,12 @@
 package fr.efrei.tp;
 
 import fr.efrei.tp.domain.entity.Item;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@RunWith(SpringRunner.class)
 public class ItemEntryPointTest extends AbstractTest{
     @Autowired
     private ItemEntryPoint itemEntryPoint;
