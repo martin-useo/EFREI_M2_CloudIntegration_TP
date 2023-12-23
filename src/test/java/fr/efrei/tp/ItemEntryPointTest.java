@@ -25,13 +25,15 @@ public class ItemEntryPointTest extends AbstractTest{
     void createItem() {
         var item = new Item();
         item.setId("33");
-        assertNotNull(itemEntryPoint.createItem(new Item()));
+        item.setName("test");
+        item.setPrice(300);
+        assertNotNull(itemEntryPoint.createItem(item));
     }
 
     @Test
     void updateItem() {
-        var item = new Item("12", "test", 300);
-        assertNotNull(itemEntryPoint.updateItem(new Item()));
+        var item = new Item("1", "test", 300);
+        assertNotNull(itemEntryPoint.updateItem(item));
     }
 
     @Test
